@@ -1,0 +1,203 @@
+  
+  body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 18rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #3adbce;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    align-content: center;
+    margin: 1rem 2rem;
+  }
+  
+  .sidenav a:hover {
+    color: #3adbce;
+  }
+  
+  .main {
+    margin-left: 18rem; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 20px 10px;
+    max-width: 75rem;
+    margin-top: 10rem;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+
+
+
+  }
+
+
+  .nombre {
+    font-size: 4.7rem;
+    color:#6c757d;
+    font-family: "Saira Extra Condensed";
+    margin: 0 0 0 2%;
+    padding-bottom: 0%;
+    font-weight: bold;
+  }
+
+  .apellido {
+    font-family: "Saira Extra Condensed";
+    font-size: 4.7rem;
+    color: #3adbce;
+    font-weight: bold;
+  }
+
+  .puesto {
+    font-family: "Saira Extra Condensed";
+    font-size: 1.5rem;
+    color:#6c757d;
+    margin: -30px 0 24px 2%;
+  }
+
+  .email {
+    font-family: "Saira Extra Condensed";
+    font-size: 1.5rem;
+    color:#3adbce;
+    margin: -30px 0 24px 0;
+  }
+
+  .objetivo{
+    font-family: "Courier New";
+    font-size: 1.2rem;
+    color:#6c757d;
+    margin: 0 8% 20% 2%;
+  }
+
+  .cabecera-seccion {
+    font-family: "Courier New";
+    font-size: 2rem;
+    color:#6c757d;
+    text-align: center;
+    font-weight: bold;
+    border-top: 0.1rem solid #d6d9db;
+  }
+  
+  .cabecera-presentacion {
+    font-family: "Courier New";
+    margin: 0px 0px 0px 10rem;
+    font-size: 2rem;
+    color:#6c757d;
+    text-align: center;
+    font-weight: bold;
+    border-top: 0.1rem solid #d6d9db;
+  }
+
+
+
+  
+  .puesto-titulo{
+    font-family: "Courier New";
+    font-size:2rem;
+    margin: 4rem 1rem 0rem 1rem;
+    align-content: left;
+    
+
+  }
+
+  .puesto-empresa {
+    font-family: "Courier New";
+    font-size: 1.6rem;
+    margin: 0rem 1rem;
+    align-content: left;
+    color: #6c757d;
+  }
+
+  .puesto-descripcion {
+    white-space: pre-line;
+    font-family: "Courier New";
+    font-size: 1rem;
+    margin: 1rem 20rem 1rem 1rem;
+  }
+
+  .puesto-fechas {
+    align-content:right;
+    color: #3adbce;
+    font-family: "Courier New";
+    font-size: 1rem;
+    margin-right: 1rem;
+    float:right;
+    
+  }
+
+
+
+  .educacion-titulo {
+    font-family: "Courier New";
+    font-size: 1.2rem;
+    margin: 1rem 1rem;
+    align-content: left;
+    color: #6c757d;
+    font-weight: bold;
+  }
+
+  .educacion-centro {
+    white-space: pre-line;
+    font-family: "Courier New";
+    font-size: 1rem;
+    margin: 0 0 2rem 1rem;
+  }
+
+  .educacion-fecha {
+    align-content:right;
+    color: #3adbce;
+    font-family: "Courier New";
+    font-size: 1rem;
+    margin-right: 1rem;
+    float:right;
+    
+  }
+
+
+  .informatica-conocimiento {
+    font-family: "Courier New";
+    font-size: 1.2rem;
+    margin: 1rem 1rem;
+    align-content: left;
+    color: #6c757d;
+    font-weight: bold;
+  }
+
+  .informatica-nivel {
+    white-space: pre-line;
+    font-family: "Courier New";
+    font-size: 1rem;
+    margin: 0 0 2rem 1rem;
+  }
+
+  .main > p > .puesto-titulo{
+    margin-left: 10rem;
+  }
+
+
+  .img-perfil {
+    border-radius: 50%;
+    margin: 65% 20% 5% 20%;
+    width:10rem;
+    height: 10rem;
+    border: 10px solid #1b9c92;
+  }
+
+  pre {
+    font-size: 1.5rem;
+    
+  }

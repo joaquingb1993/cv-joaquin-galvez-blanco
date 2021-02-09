@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Galvez Blanco, Joaquin - CV</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'core/assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'core/assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'core/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'core/assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'core/assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'core/assets/vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'core/assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'core/assets/vendor/aos/aos.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'core/assets/css/style.css' %}" rel="stylesheet">
+  <!-- <link rel="stylesheet" type="text/css" href="{% static 'core/css/menu.css' %}" /> -->
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v2.0.3
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="{% static 'core/assets/img/profile-img.jpg' %}" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="#home">JOAQUÍN GÁLVEZ BLANCO</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.facebook.com/profile.php?id=100008989573648" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/entre_pensamiento/?hl=es" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/joaqu%C3%ADn-g%C3%A1lvez-blanco-84b814b4/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li class="active"><a href="#home"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
+          <li><a href="#experiencia"><i class="bx bx-file-blank"></i> <span>Experiencia</span></a></li>
+          <li><a href="#educacion"><i class="bx bx-book"></i>Formación</a></li>
+          <li><a href="#informatica"><i class="bx bx-mouse"></i>Informática</a></li>
+          <li><a href="#about-me"><i class="bx bx-user"></i> <span>Sobre mi</span></a></li>
+          <li><a href="#email"><i class="bx bx-envelope"></i>joaquingb.proyectos@gmail.com</a></li>
+          <li><a href="#telefono"><i class="bx bx-phone"></i>(+34) 617 13 17 15</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="home"></div>
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container col-lg-9 col-md-4 col-sm-4" data-aos="fade-in">
+      <h1 class="col-lg-10 col-xs-10">JOAQUÍN <spam style="color:aqua">GÁLVEZ</spam> BLANCO</h1>
+      <p class="col-lg-10 col-xs-10">Técnico de sistemas con más de 5 años de experiencia en entornos Unix, control de procesos, programación de scripts y gestión de bases de datos. Buscando siempre seguir aprendiendo.</p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= EXPERIENCIA LABORAL ======= -->
+    <section id="experiencia" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>EXPERIENCIA LABORAL</h2>
+          <div class="row">
+
+          <div class="col-lg-12 col-md-10 col-xs-12 content" data-aos="fade-left">
+            <div id="seccion-experiencia" >
+              {% for project in projects %}
+              <p class="p-titulo">{{project.title}}
+                <span class="col-lg-3 col-xs-1 p-fechas">{{project.fecha}}</span>
+              </p>
+              <p class="p-empresa">{{project.empresa}}</p>
+              <p class="col-lg-8 col-xs-10 p-descripcion">{{project.description}}</p>
+              {% endfor %}
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- End EXPERIENCIA LABORAL Section -->
+
+    <!-- ======= FORMACION ACADEMICA ======= -->
+    <section id="educacion" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>FORMACIÓN ACADÉMICA</h2>
+          <div class="row">
+
+          <div class="col-lg-12 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <div>
+              <p class="e-fechas">2020 - Act.</p>
+              <p class="e-titulo">Técnico superior en Desarrollo de Aplicaciones Web</p>
+              <p class="e-centro">IES Albarregas</p>
+            </div>
+            <div>
+              <p class="e-fechas">2019 - 2021 </p>
+              <p class="e-titulo">Técnico superior en Desarrollo de Aplicaciones Multiplataforma</p>
+              <p class="e-centro">IES Augustobriga</p>
+            </div>
+            <div>
+              <p class="e-fechas">2011 - 2013 </p>
+              <p class="e-titulo">Técnico superior en Gestión Comercial y Marketing</p>
+              <p class="e-centro">IES OSCUS</p>
+              
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- End FORMACION ACADEMICA Section -->
+    <!-- ======= INFORMATICA ======= -->
+
+    <section id="informatica" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>INFORMÁTICA</h2>
+          <div class="row">
+
+          <div class="col-lg-12 col-xs-12 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <div>
+              <p class="col-lg-8 col-xs-10 i-conocimiento">Sistemas operativos Windows y Unix. Entorno usuario y línea de comandos.</p>
+              <p class="col-lg-2 col-xs-2 i-nivel">Nivel Intermedio</p>
+            </div>
+            <div>
+              <p class="col-lg-8 col-xs-10 i-conocimiento">Creación y edición de bases de datos SQL.</p>
+              <p class="col-lg-2 col-xs-2 i-nivel">Nivel Intermedio</p>
+            </div>
+            <div>
+              <p class="col-lg-8 col-xs-10 i-conocimiento">Herramientas de monitorización Remedy, Jira, Nagios, Grafana y Check MK.</p>
+              <p class="col-lg-2 col-xs-2 i-nivel">Nivel Avanzado</p>
+            </div>
+            <div>
+              <p class="col-lg-8 col-xs-10 i-conocimiento">Lenguajes de programación Java, Bash, Python, PHP, JS.</p>
+              <p class="col-lg-2 col-xs-2 i-nivel">Nivel Intermedio</p>
+            </div>
+            <div>
+              <p class="col-lg-8 col-xs-10 i-conocimiento">Gestión de procesos con OPC, Z/OS y Control-M.</p>
+              <p class="col-lg-2 col-xs-2 i-nivel">Nivel Intermedio</p>
+            </div>
+            <br><br><br><br>
+          </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- End INFORMATICA Section -->
+
+        <!-- ======= SOBRE MI ======= -->
+        <section id="about-me" class="about">
+          <div class="container">
+    
+            <div class="section-title">
+              <h2>SOBRE MI</h2>
+              <div class="row">
+    
+              <div class="col-lg-10 col-md-10 col-xs-12 content" data-aos="fade-left">
+                <div id="seccion-sobremi" >
+                  <p class="about-me">Programador con ganas siempre de seguir aprendiendo. Orientando mi carrera al mundo de bases de datos y no parando nunca.
+                    <br><br>
+                    Podrían definirme de muchas formas: extrovertido, persistente, animado, feliz… Pero la que usaría yo sería inteligencia emocional. Capacidad para afrontar los conflictos y dificultades. 
+                    <br><br>
+                    "La suerte es la definición común de emplear los medios de que disponemos para solventar las dificultades de la vida."
+                    
+                    </p>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+        <!-- End EXPERIENCIA LABORAL Section -->
+
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'core/assets/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/typed.js/typed.min.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/aos/aos.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'core/assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

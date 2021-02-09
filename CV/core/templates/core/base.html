@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel='stylesheet' type='text/css'>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{% static 'core/css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'core/css/menu.css' %}" />
+    <title>{% block title %}{% endblock %} | Mi web personal </title>
+</head>
+<body>
+    <!-- CABECERA -->
+
+  <div class="sidenav">
+      <img class="img-perfil" src="{% static 'core/images/fotoperfil.png' %}" width="70px" height="70px"/>
+      <a href="{% url 'home' %}">INICIO</a>
+      <a class="sr-only-focusable" href="{% url 'about' %}">ACERCA DE MI</a>
+      <a class="sr-only-focusable" href="#seccion-experiencia">EXPERIENCIA</a>
+      <a href="{% url 'contacto' %}">CONTACTO</a>
+  </div>
+<!-- CONTENIDO -->
+<div class="main">
+        <p class="nombre">JOAQUIN <spam class="apellido">GALVEZ</spam> BLANCO</p>
+        <p class="puesto">TECNICO SISTEMAS - <span id="email-id" class="email">joaquingb.proyectos@gmail.com</span>
+        <p class="objetivo">Mi objetivo profesional va dirigido a conseguir experiencia laboral, en una empresa que me permita crecer personal y profesionalmente, y que crea en los beneficios de incorporar a gente con iniciativa al equipo, donde pueda poner en práctica todo lo aprendido durante mis años de experiencia.</p>
+        <br><br><br><br>
+
+        <!--<img src="{% static 'core/images/copy.png' %}" width="15px" height="15px"> -->
+        
+
+        
+        
+       
+        <div id="seccion-experiencia" >
+            <p class="cabecera-seccion">EXPERIENCIA LABORAL</p>
+            {% for project in projects %}
+            <p class="puesto-titulo">{{project.title}}</p>
+            <p class="puesto-fechas">{{project.fecha}}</p>
+            <p class="puesto-empresa">{{project.empresa}} </p>
+            <p class="puesto-descripcion">{{project.description}}</p>
+            {% endfor %}
+        </div>
+                
+        
+      
+</div>
+    {% block content %}
+      
+      
+        
+    {% endblock %}
+
+
+
+
+   
+</body>
+</html> 
